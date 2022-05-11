@@ -77,7 +77,7 @@ jobs:
           context: ${{ env.CONTENT_PATH }}
           file: ${{ env.CONTENT_PATH }}/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/arm64
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
